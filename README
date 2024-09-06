@@ -1,0 +1,20 @@
+La solución implementada tiene a los siguientes metodos diseñados para realizar tareas específicas en la gestión de matrices. 
+Estos métodos permiten crear y manipular matrices de manera eficiente, donde los metodos utilizados 
+fueron los siguientes:
+
+1. mostrarMenuPrincipal(): Controla la interacción del usuario con el menú.
+2. mostrarOpciones(): Muestra las opciones del menú.
+3. capturarOpcion(): Captura la opción seleccionada por el usuario.
+4. procesarOpcion(int opcion, int[][] matriz): Procesa la opción seleccionada por el usuario y realiza la acción correspondiente.
+5. crearMatriz(): Inicializa una matriz con las dimensiones ingresadas por el usuario.
+6. validarDimensiones(int filas, int cols): Valida que las dimensiones de la matriz sean mayores a 0.
+7. capturarDimensiones(): Captura las dimensiones de la matriz desde la entrada del usuario.
+8. llenarMatriz(int[][] matriz): Llena la matriz con valores aleatorios entre 0 y 9.
+9.  mostrarFilaEspecifica(int[][] matriz): Muestra una fila específica de la matriz.
+10. matrizCero(int[][] matriz): Verifica si más del 50% de los valores de la matriz son ceros.
+
+
+
+
+
+
