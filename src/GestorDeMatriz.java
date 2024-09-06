@@ -8,7 +8,7 @@ public class GestorDeMatriz {
         mostrarMenuPrincipal();
     }
 
-    // Declaramos el metodo mostrarMenuPrincipal que se encarga de controlar la interaccion del usuario con el menu.
+    // Declaramos el método mostrarMenuPrincipal que se encarga de controlar la interaccion del usuario con el menu.
     public static void mostrarMenuPrincipal() {
         int opcion;
         int[][] matriz = null;// Declara una matriz sin asignarle ningun valor por eso se inicializa con el null
@@ -19,7 +19,7 @@ public class GestorDeMatriz {
         } while (opcion != 5); // Repite la aparicion del menu hasta que el usuario seleccione el numero 5 que es la opcion para salir
     }
 
-    // Declaramos el metodo mostrarOpciones que se encarga de mostrar las opciones del menu.
+    // Declaramos el método mostrarOpciones que se encarga de mostrar las opciones del menu.
     public static void mostrarOpciones() {
         System.out.println("\n--- Menú de opciones ---");
         System.out.println("1. Crear matriz");
@@ -31,7 +31,7 @@ public class GestorDeMatriz {
     }
 
     /*
-    Declaramos el metodo capturarOpcion que obtiene el número ingresado por el usuario.
+    Declaramos el método capturarOpcion que obtiene el número ingresado por el usuario.
     Lo guarda temporalmente en una variable y lo retorna al método que lo llamó.
      */
     public static int capturarOpcion() {
@@ -39,7 +39,7 @@ public class GestorDeMatriz {
         return sc.nextInt();
     }
 
-    // Declaramos el metodo procesarOpcion que se encarga de ejecutar la accion que haya sido seleccionada por el usuario.
+    // Declaramos el método procesarOpcion que se encarga de ejecutar la accion que haya sido seleccionada por el usuario.
     public static int[][] procesarOpcion(int opcion, int[][] matriz) {
         switch (opcion) {
             case 1:
@@ -96,12 +96,12 @@ public class GestorDeMatriz {
         }
     }
 
-    // Declaramos el metodo validarDimensiones para asegurarnos que las dimensiones sean válidas.
+    // Declaramos el método validarDimensiones para asegurarnos que las dimensiones sean válidas.
     public static boolean validarDimensiones(int filas, int cols) {
         return filas > 0 && cols > 0;
     }
 
-    // Método para capturar las dimensiones ingresadas por el usuario
+    // Declaramos el método capturarDimensiones para capturar las dimensiones ingresadas por el usuario
     public static int[] capturarDimensiones() {
         Scanner sc = new Scanner(System.in);
         int[] dimensiones = new int[2];
@@ -115,7 +115,7 @@ public class GestorDeMatriz {
         return dimensiones;
     }
 
-    // Método para llenar la matriz con números aleatorios entre 0 y 9
+    // Declaramos el método llenarMatriz para llenar la matriz con números aleatorios entre 0 y 9
     public static int[][] llenarMatriz(int[][] matriz) {
         Random random = new Random();
         for (int i = 0; i < matriz.length; i++) {
@@ -126,7 +126,7 @@ public class GestorDeMatriz {
         return matriz;
     }
 
-    // Método para mostrar una fila específica de la matriz
+    // Declaramos el método mostrarFilasEspecifica para mostrar una fila específica de la matriz
     public static void mostrarFilaEspecifica(int[][] matriz) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese el número de fila a mostrar (entre 0 y " + (matriz.length - 1) + "): ");
